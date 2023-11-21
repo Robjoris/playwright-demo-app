@@ -1,0 +1,26 @@
+{
+  "name": "demoblaze",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "installPlaywright": "npx playwright install",
+    "playwrightRights": "npx playwright install-deps",
+    "testCase": "npx playwright test",
+    "testCase with allure": "npx playwright test --reporter=line,allure-playwright",
+    "create reports": "allure generate ./allure-results --clean",
+    "test": "cucumber-js test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.9.1",
+    "allure-commandline": "^2.24.1",
+    "allure-playwright": "^2.9.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.0.1"
+  }
+}

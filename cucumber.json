@@ -1,0 +1,7 @@
+{
+    "default" :{
+        "paths": [
+            "tests/cucumber/features"
+        ]
+    }
+}
