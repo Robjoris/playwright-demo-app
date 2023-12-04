@@ -1,11 +1,12 @@
-// @ts-check
+// @ts-nocheck
 const { test, expect } = require('@playwright/test');
+const percySnapshot = require('@percy/playwright');
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+test('Take screenshot', async ({ page }) => {
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+  await page.goto('https://www.demoblaze.com/');
+  await percySnapshot(page,"demoblaze homepage");
+
 });
 
 test('get started link', async ({ page }) => {

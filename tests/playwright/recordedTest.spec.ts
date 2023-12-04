@@ -9,7 +9,7 @@ test('test', async ({ page }) => {
   await page.getByLabel('Password:').fill('securePassword');
   await page.getByRole('button', { name: 'Sign up' }).click();
   await expect(page.getByText('New message × Contact Email: Contact Name: Message: Close Send message Sign up')).toBeVisible();
-  await page.getByLabel('Sign up').getByLabel('Close').click();s
+  await page.getByLabel('Sign up').getByLabel('Close').click();
   await page.getByRole('link', { name: 'Log in' }).click();
 
   await page.locator('#loginusername').click();
