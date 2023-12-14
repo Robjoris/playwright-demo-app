@@ -5,3 +5,4 @@ node_modules/
 /test-results/
 /test-report/
 /playwright/.cache/
+/allure-results/
