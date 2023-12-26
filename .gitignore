@@ -1,0 +1,10 @@
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/cucumber-report/
+cucumber-report.html
+/test-result/
+/allure-results/
+/allure-report/

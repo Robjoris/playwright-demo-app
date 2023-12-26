@@ -1,0 +1,29 @@
+{
+  "name": "playwright-demo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "playwright:test": "playwright test",
+    "playwright:testHeaded": "playwright test --headed",
+    "playwright:report": "playwright show-report",
+    "allure:test": "playwright test --reporter=line,allure-playwright",
+    "allure:createReport": "allure generate ./allure-results allure-report-html --clean",
+    "allure:openReport": "allure open",
+    "cucumber:test": "cucumber-js test",
+    "percy:screenshot": "percy exec -- playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "@percy/cli": "^1.27.4",
+    "@percy/playwright": "^1.0.4",
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.5",
+    "ts-node": "^10.9.2",
+    "allure-commandline": "^2.24.1",
+    "allure-playwright": "^2.9.2"
+  }
+}
