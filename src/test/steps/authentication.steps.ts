@@ -1,14 +1,10 @@
 // @ts-check
-import { Given, When, Then } from "@cucumber/cucumber";
+import { When, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
-import { LoginPage } from "../pages/Login.page";
+import { LoginPage } from "../pages/login.page";
 import { pageFixture } from "../../hooks/pageFixture";
 
 const loginPage = new LoginPage(); 
-
-Given(/I go to the homepage/, async function()  {
-    loginPage.goto('https://www.demoblaze.com/');
-});
 
 When('I click on {string}', async function(typeOfLogin) {
     if (typeOfLogin === "login") {

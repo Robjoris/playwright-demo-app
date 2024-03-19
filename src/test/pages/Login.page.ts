@@ -7,10 +7,6 @@ setDefaultTimeout(60 * 1000 * 2);
 
 export class LoginPage {
     
-    async goto(url:string) {
-        await pageFixture.page.goto(url);
-    }
-
     async signUp() {
         const randomNumber = Math.floor(Math.random() * 1000000);
         const randomUser = "randonUser" + randomNumber;
