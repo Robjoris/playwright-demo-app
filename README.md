@@ -53,6 +53,12 @@ Workshop Ready: GitHub template project designed for workshops, offering a struc
     }
     ```
 
+## Test set-up
+
+- To test installation run these commands:
+      - `npm cucumber:test`
+      - `npm playwright:test`
+
 ## Extra's
 
 - Install optional plugins
