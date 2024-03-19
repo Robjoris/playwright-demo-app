@@ -16,10 +16,10 @@ Workshop Ready: GitHub template project designed for workshops, offering a struc
 
 ### Set-up from scratch
 
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> => Install Playwright => OK
 - Install plugins
     - [Playwright Test for VSCode](vscode:extension/ms-playwright.playwright)
     - [Cucumber (Gherking) Full Support](vscode:extension/alexkrechik.cucumberautocomplete)
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> => Install Playwright => OK
 - Install dependencies: 
     - `npm i @cucumber/cucumber -D`
     - `npm i ts-node -D`
