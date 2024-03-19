@@ -16,6 +16,8 @@ Workshop Ready: GitHub template project designed for workshops, offering a struc
 
 ### Set-up from scratch
 
+- Open visual studio code
+- Click on extensions
 - Install plugins
     - [Playwright Test for VSCode](vscode:extension/ms-playwright.playwright)
     - [Cucumber (Gherking) Full Support](vscode:extension/alexkrechik.cucumberautocomplete)
